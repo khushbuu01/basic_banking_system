@@ -285,7 +285,7 @@ header a.conbtn:hover{
     background-color:#e60606
 }
 .social-icons a.github:hover {
-    background-color:#4078c0
+    background-color:#808080
 }
 @media (max-width:767px){
   .social-icons li.title
