@@ -386,7 +386,7 @@ header a.conbtn:hover{
     margin: 0;
   }
   .home .image img{
-    width: 100%;
+    width: 80%;
   }
   .site-footer p span{
     left: 50%;
@@ -411,17 +411,10 @@ header a.conbtn:hover{
   }
   header .navbar{
       position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      padding: 1rem 2rem;
-      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-      transition: 0.2s linear;
+      top: 100%; left: 0; right: 0;
+      background: #f7f7f7;
+      border-top: .1rem solid rgba(0, 0, 0, 0.1);
+      clip-path: polygon(0 0,100% 0,100% 0,0 0);
   }
   header .navbar.active{
       clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
