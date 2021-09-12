@@ -26,6 +26,7 @@ SECRET_KEY = 'zopvw3^bl^qg$eumc48ujhg!!mplt7_a3p=vw)tp&y9@ev%rmf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1'
 	'tsf--bank.herokuapp.com'
 ]
 
