@@ -16,13 +16,9 @@ h1{
   width: 40%;
   margin-top: 5rem;
 }
-@media(max-width:450px){
-  .container .image img{
-    width: 200px;
-    height: 200px;
-  }
-.image{
-    margin-top: 1rem;
+@media (max-width:450px) {
+  img#optionalstuff {
+    display: none;
   }
 }
 label{
@@ -93,7 +89,7 @@ input{
 
 <div class="container">
         <div class="image">
-          <img src="{% static 'img/transfer.png' %}" alt="">
+          <img id="optionalstuff" src="{% static 'img/transfer.png' %}" alt="">
         </div>
         <form action="{% url 'transfer' %}" method="post" name="tcredit" class="tabletext" >
         {% csrf_token %}
