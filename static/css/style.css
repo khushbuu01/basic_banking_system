@@ -405,7 +405,7 @@ header a.conbtn:hover{
   padding: .5rem 1.5rem;
   display: none;
 }
-@media(max-width:100px){
+@media(max-width:768px){
   #menu-bar{
       display: initial;
   }
