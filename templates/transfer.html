@@ -18,7 +18,7 @@ h1{
   background: #2437e7;
 }
 @media (max-width:450px) {
-  img#optionalstuff {
+  .image#optionalstuff {
     display: none;
   }
 }
@@ -84,13 +84,14 @@ input{
 @media(max-width:450px){
   .card {
     width: 100%;
+    margin-top: 5rem;
   }
 }
 </style>
 
 <div class="container">
-        <div class="image">
-          <img id="optionalstuff" src="{% static 'img/transfer.png' %}" alt="">
+        <div class="image" id="optionalstuff">
+          <img src="{% static 'img/transfer.png' %}" alt="">
         </div>
         <form action="{% url 'transfer' %}" method="post" name="tcredit" class="tabletext" >
         {% csrf_token %}
