@@ -9,14 +9,6 @@ h1{
 .msg{
     font-size: 1.3rem;
 }
-img{
-  float:left;
-  align-items: center;
-  padding: 3.5rem;
-  width: 60%;
-  margin-top: 10rem;
-  background: yellow;
-}
 label{
     font-size: 2rem;
     font-weight: 800;
@@ -80,15 +72,13 @@ input{
   .card {
     width: 100%;
   }
-  img{
-    width: 500px;
-    height: 500px;
-    }
 }
 </style>
 
 <div class="container">
+        <div class="image">
           <img src="{% static 'img/transfer.png' %}" alt="">
+        </div>
         <form action="{% url 'transfer' %}" method="post" name="tcredit" class="tabletext" >
         {% csrf_token %}
         <br><br>
